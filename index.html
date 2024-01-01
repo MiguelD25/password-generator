@@ -1,0 +1,29 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate a <span class="change-color"><br>random password</h1>
+            <p>Never use an insecure password again</p>
+            <label>Set password Length (If not input - Default 15 characters)<br></label>
+            <input  type="text" id="user-input" placeholder="Set password length" />
+            <!-- <input  type="button" id="set-input" value="confirm" onclick="getInput()"> -->
+            <button id="generate-pw" onclick="showPasswords(); getInput()">Generate passwords</button>
+            <h4></h4>
+            <div class="password">
+                <div>
+                    <textarea type="text" id="password1-el" onclick="copyPassword1()"></textarea>
+                </div>
+                <div>
+                    <textarea type="text" id="password2-el" onclick="copyPassword2()"></textarea>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
